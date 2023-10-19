@@ -1,0 +1,44 @@
+<html> <!-- Opening of the HTML document -->
+<head>
+    <title>JavaScript Calculator</title> <!-- Title of the document shown in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS stylesheet for styling -->
+</head>
+<body>
+    <nav> <!-- Navigation section for the website -->
+        <ul> <!-- Unordered list for navigation links -->
+            <li><a href="index.html">Home</a></li> <!-- List item with a link to the Home page -->
+            <li><a href="AssetDocument.html">Asset Document</a></li> <!-- List item with a link to "Asset Document" page -->
+            <li><a href="portfolioB.html">Baqir's Portfolio</a></li> <!-- List item with a link to "Baqir's Portfolio" page -->
+            <li><a href="portfolioA.html">Abyan's Portfolio</a></li> <!-- List item with a link to "Abyan's Portfolio" page -->
+            <li><a class="active" href="calculator.html">Calculator</a></li> <!-- List item with a link to the "Calculator" page and a class "active" to indicate the current page -->
+        </ul>
+    </nav>
+
+    <div class="calculator"> <!-- Container div for the calculator section -->
+        <div class="display"> <!-- Container div for the display section -->
+            <input type="text" id="input" value="" readonly> <!-- Input field for displaying calculator input, set to read-only -->
+        </div>
+        <div class="buttons"> <!-- Container div for the calculator buttons -->
+            <button class="clear" onclick="clearInput()">C</button> <!-- Button to clear the input, calling the JavaScript function clearInput() on click -->
+            <button onclick="appendToInput('7')">7</button> <!-- Button to append '7' to the input, calling the JavaScript function appendToInput('7') on click -->
+           <!--THE REST OF THE NUMBER AND OPERATION BUTTONS WORK THE SAME-->
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button class="operator" onclick="appendToInput('+')">+</button>
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button class="operator" onclick="appendToInput('-')">-</button>
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button class="operator" onclick="appendToInput('*')">*</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button> <!-- Button to calculate the result, calling the JavaScript function calculate() on click -->
+            <button class="operator" onclick="appendToInput('/')">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to an external JavaScript file for calculator functionality -->
+</body>
+</html>

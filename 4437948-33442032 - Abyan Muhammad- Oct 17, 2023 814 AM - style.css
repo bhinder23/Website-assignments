@@ -1,0 +1,197 @@
+/* CSS for styling h1 elements */
+h1 {
+    color: rgb(255, 255, 255); /* Set text color to white */
+    text-align: center; /* Center-align text */
+    font-family: Copperplate; /* Use the 'Copperplate' font family */
+}
+
+/* CSS for styling h2 elements */
+h2 {
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-family: Copperplate; /* Use the 'Copperplate' font family */
+    font-size: 25px; /* Set font size to 25 pixels */
+    margin: 10px; /* Add a 10-pixel margin around the element */
+    text-align: center; /* Center-align text */
+}
+
+/* CSS for styling center elements (deprecated in modern HTML) */
+center {
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-family: Copperplate; /* Use the 'Copperplate' font family */
+}
+
+/* CSS for styling p elements */
+p {
+    color: rgb(255, 255, 255); /* Set text color to white */
+}
+
+/* CSS for styling .contact and .home classes */
+.contact, .home {
+    background-color: #1E3B5A; /* Set background color to a specific shade */
+    margin-top: 50px; /* Add a top margin of 50 pixels */
+    text-align: center; /* Center-align text */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-family: Copperplate; /* Use the 'Copperplate' font family */
+}
+
+/* CSS for styling elements with .project class */
+.project {
+    flex: 1; /* Allow elements to grow and shrink with equal proportions */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically within the container */
+    padding: 10px; /* Add 10 pixels of padding */
+}
+
+/* CSS for styling .project-image class */
+.project-image {
+    border-radius: 10px; /* Round corners with a 10-pixel border radius */
+    max-width: 300px; /* Set a maximum width of 300 pixels (can be adjusted) */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-left: 20px; /* Add 20 pixels of left margin */
+}
+
+/* CSS for styling elements with .box class */
+.box {
+    background-color: #1E3B5A; /* Set background color to a specific shade */
+    border-radius: 50px; /* Round corners with a 50-pixel border radius */
+    margin-left: 5px; /* Add 5 pixels of left margin */
+    margin-right: 5px; /* Add 5 pixels of right margin */
+    margin-top: 120px; /* Add a top margin of 120 pixels */
+    opacity: 0; /* Set initial opacity to 0 (invisible) */
+    transition: opacity 1.5s; /* Apply a 1.5-second opacity transition effect */
+}
+
+/* CSS for styling .fade-in elements that are active */
+.fade-in.active {
+    opacity: 1; /* Make visible when the "active" class is applied */
+}
+
+/* CSS for styling navigation menu (ul, li, and a elements) */
+ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Hide overflowing content */
+    background-color: #333; /* Set background color to a specific shade */
+    position: fixed; /* Fix the navigation menu position */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it on the left side */
+    width: 100%; /* Set the width to 100% of the viewport */
+}
+
+li {
+    float: left; /* Make list items float to the left */
+    border-right: 1px solid #bbb; /* Add a right border to separate items */
+}
+
+li a {
+    display: block; /* Display links as block elements */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+    padding: 14px 16px; /* Add padding to the links */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+li a:hover:not(.active) {
+    background-color: #111; /* Change background color on hover (excluding the active link) */
+}
+
+.active {
+    background-color: #1E3B5A; /* Set background color for the active link */
+}
+
+/* CSS for styling table elements (used for tabular data) */
+table {
+    font-family: arial, sans-serif; /* Set the font family for table text */
+    border-collapse: collapse; /* Collapse table borders to remove spacing */
+    width: 100%; /* Set table width to 100% of its container */
+}
+
+td, th {
+    border: 1px solid #dddddd; /* Add a 1-pixel solid border to table cells */
+    text-align: left; /* Left-align text in cells */
+    padding: 8px; /* Add 8 pixels of padding within cells */
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd; /* Add a background color to even rows */
+}
+
+/* CSS for general page container and body */
+.container {
+    width: 100%; /* Set container width to 100% */
+    height: 100vh; /* Set container height to 100% of viewport height */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+body {
+    background-color: #221f1f; /* Set the background color for the entire page */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    font-family: Arial, sans-serif; /* Set the default font family for text */
+}
+
+/* CSS for styling the calculator */
+.calculator {
+    width: 300px; /* Set a specific width for the calculator */
+    margin: 50px auto; /* Center-align and add margin around the calculator */
+    background-color: #1E3B5A; /* Set the calculator's background color */
+    border: 1px solid #ccc; /* Add a 1-pixel solid border */
+    border-radius: 5px; /* Round corners with a 5-pixel border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply a box shadow for a subtle effect */
+}
+
+/* CSS for styling the display area within the calculator */
+.display {
+    padding: 10px; /* Add padding around the display */
+    text-align: right; /* Right-align text within the display */
+    border-bottom: 1px solid #ccc; /* Add a 1-pixel border at the bottom of the display */
+    font-size: 1.5em; /* Set font size for the display text */
+}
+
+/* CSS for styling the calculator buttons */
+.buttons {
+    display: grid; /* Use grid layout for the calculator buttons */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+    gap: 5px; /* Add a 5-pixel gap between buttons */
+    padding: 10px; /* Add padding around the buttons */
+}
+
+/* CSS for styling the operator buttons and "C" button in the calculator */
+.operations {
+    display: grid; /* Use grid layout for operator buttons */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+    gap: 5px; /* Add a 5-pixel gap between buttons */
+    padding: 10px; /* Add padding around the operator buttons */
+}
+
+button {
+    padding: 10px; /* Add padding to the buttons */
+    font-size: 1.5em; /* Set font size for the buttons */
+    background-color: #f0f0f0; /* Set a background color for the buttons */
+    border: 1px solid #ccc; /* Add a 1-pixel solid border to the buttons */
+    border-radius: 5px; /* Round corners with a 5-pixel border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.2s, color 0.2s; /* Apply smooth transitions */
+}
+
+/* Change button background and text color on hover */
+button:hover {
+    background-color: #ccc; /* Change background color on hover */
+    color: #333; /* Change text color on hover */
+}
+
+/* Apply different styles to operator buttons and "C" button */
+.operator {
+    background-color: #88D8C0; /* Set background color for operator buttons */
+    color: #1E3B5A; /* Set text color for operator buttons */
+    border: 1px solid #1E3B5A; /* Add a border for operator buttons */
+}
+
+.clear {
+    background-color: #88D8C0; /* Set background color for the "C" button */
+    color: #1E3B5A; /* Set text color for the "C" button */
+    border: 1px solid #1E3B5A; /* Add a border for the "C" button */
+}
